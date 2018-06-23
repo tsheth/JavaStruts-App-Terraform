@@ -69,7 +69,7 @@ cmd> id
 cmd> whoami
 
 
-####step 6: SSH to public ip of victim server and show the affected file
+#### step 6: SSH to public ip of victim server and show the affected file
 
 
 
